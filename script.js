@@ -1,0 +1,13 @@
+const secondHand = document.querySelector('.second-hand');
+
+function setDate() {
+    const now = new Date();
+    const seconds = now.getSeconds();
+    console.log(seconds)
+    const secondsDegress = ((seconds / 60) * 360)
+
+    console.log(seconds)
+
+}
+
+setInterval(setDate, 1000)
